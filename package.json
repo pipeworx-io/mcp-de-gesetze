@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-de-gesetze",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "German federal statutes and ordinances (Bundesrecht) — search by title or official abbreviation (BGB, StGB, HGB, BDSG, GG…), read a single § or Art. in full, browse a law's structure, and get its amendment status ('Stand'), from Gesetze im Internet (BMJ/juris).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-7464ad6870e75712817159863dbc3fb197a3bccfe8a2418406b9ea3b009bb827",
-    "sourceCommit": "fe38188882d0fe91e5a45d82b7b989b4aae1e8b6"
+    "sourceHash": "v1-42325e43ed0a543211445dc1ac466eb659220c664ff91d46064067637e13c26d",
+    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
   }
 }
