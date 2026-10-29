@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/de-gesetze",
   "title": "De Gesetze",
   "description": "German federal statutes and ordinances (Bundesrecht) — search by title or official abbreviation…",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/de-gesetze",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-de-gesetze",

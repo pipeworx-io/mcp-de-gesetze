@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-de-gesetze",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "German federal statutes and ordinances (Bundesrecht) — search by title or official abbreviation (BGB, StGB, HGB, BDSG, GG…), read a single § or Art. in full, browse a law's structure, and get its amendment status ('Stand'), from Gesetze im Internet (BMJ/juris).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-de-gesetze": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "de-gesetze"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-de-gesetze.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/de-gesetze",
   "pipeworx": {
-    "sourceHash": "v1-42325e43ed0a543211445dc1ac466eb659220c664ff91d46064067637e13c26d",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "de-gesetze",
+    "gatewaySlug": "de-gesetze",
+    "sourceHash": "v1-fdf31ef2c4ad9e24efe9e5c47da79d9be54da47e875633520d78f7dca50752db",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
